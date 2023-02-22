@@ -50,7 +50,9 @@ function draw() {
     }
     
     endShape(CLOSE);
-    speed += speedChange;
+    if (speed < 0.002) {
+      speed += speedChange;
+    }
 }
 
 function keyPressed() {
